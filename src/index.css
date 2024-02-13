@@ -1,0 +1,180 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: rgb(200, 221, 240);
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  font-family: cursive;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px 8px rgba(40, 46, 210, 0.1);
+  background-color: #d8ffff;
+  max-width: 350px;
+  font-family: cursive;
+  flex-grow: 1;
+}
+
+.expense-item.positive {
+  border-right: 1rem solid rgb(127, 238, 48);
+}
+
+.expense-item.negative {
+  border-right: 1rem solid rgb(248, 82, 22);
+}
+
+.income-expense-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgb(162, 216, 229);
+  background-color: #d8ffff;
+  max-width: 350px;
+  margin: 1rem auto;
+}
+
+.income,
+.expense {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: cursive;
+}
+
+.income .title,
+.expense .title {
+  font-size: 20px;
+  color: black;
+}
+
+.income {
+  color: rgba(20, 161, 93, 0.815);
+}
+
+.expense {
+  color: red;
+}
+
+.block {
+  width: 2px;
+  background-color: gray;
+  border-radius: 10px;
+}
+.h2{
+  font-family: cursive;
+  display: flex;
+  align-items: center;
+  
+}
+.balance {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgb(37, 91, 54);
+  background-color: #d8ffff;
+  max-width: 350px;
+  margin: 2rem auto;
+  font-family: cursive;
+}
+
+.add-expense-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5px;
+  border-radius: 12px;
+  max-width: 350px;
+  margin: 2rem auto;
+}
+
+.add-expense-container input[type="text"],
+.add-expense-container input[type="number"] {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin: 12px;
+  padding: 0.5rem;
+  border: solid 0.5px;
+  background-color: antiquewhite;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-right: 1rem;
+}
+
+.add-expense-container input[type="number"] {
+  appearance: textfield;
+}
+
+
+.add-expense-container .error {
+  margin-top: 0.5rem;
+  color: red;
+  font-size: 12px;
+}
+
+.add-expense-container button {
+  padding: 0.6rem 1rem;
+  display: flex;
+  justify-content: center;
+
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #66d369;
+  color: white;
+  cursor: pointer;
+}
+
+.add-expense-container button:hover {
+  background-color: #3e8e41;
+}
+
+.card {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgb(162, 216, 229);
+  background-color: #d8ffff;
+  max-width: 350px;
+  margin: 1rem auto;
+}
+
+form .error {
+  color: red;
+  font-size: 12px;
+  margin: 0.5rem 0 0 0;
+}
+
+.expense-item-container{
+  display: flex;
+  align-items: center;
+  margin:  1rem auto;
+  max-width: 400px;
+  gap: 10px;
+  margin-bottom: 0
+  ;
+}
+.delete-btn{
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid white;
+  background-color: rgb(243, 67, 18);
+  color: whitesmoke;
+  font-family: cursive;
+  cursor: pointer;
+}
