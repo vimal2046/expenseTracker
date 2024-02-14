@@ -66,7 +66,7 @@ const App = () => {
         <div className="income-expense-container">
           <div className="income">
             <span className="title">Income</span>
-            <span>{income}</span>
+            <span>{parseInt(income)}</span>
           </div>
           <div className="block"></div>
           <div className="expense">
