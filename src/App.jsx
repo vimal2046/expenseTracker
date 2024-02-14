@@ -19,10 +19,11 @@ const App = () => {
   const addExpense = (title, amount) => {
     // Add an entry locally
     const nextId = expenses.length > 0 ? expenses[expenses.length - 1].id + 1 : 1;
-    setExpenses([...expenses, { id: nextId, title: title, amount: amount }]);
-
+    const newExpense = { id: nextId, title: title, amount: amount };
+    setExpenses([...expenses, newExpense]);
+  
     // Send a POST request to add the entry on the server
-    axios.post('https://expense-tracker-api-8bby.onrender.com/add-entry', { title, amount })
+    axios.post('https://expense-tracker-api-8bby.onrender.com/add-entry', newExpense)
       .then(res => {
         console.log(res.data);
         // Optionally update state with the response from the server
