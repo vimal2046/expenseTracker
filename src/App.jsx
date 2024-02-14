@@ -8,7 +8,7 @@ const App = () => {
 
   useEffect(() => {
     // Fetch existing entries on mount
-    axios.get('https://expense-tracker-api-8bby.onrender.com/get-entry')
+    axios.get('https://expense-tracker-api2.onrender.com/get-entry')
       .then(res => {
         console.log(res.data);
         setExpenses(res.data);
@@ -23,7 +23,7 @@ const App = () => {
     setExpenses([...expenses, newExpense]);
   
     // Send a POST request to add the entry on the server
-    axios.post('https://expense-tracker-api-8bby.onrender.com/add-entry', newExpense)
+    axios.post('https://expense-tracker-api2.onrender.com/add-entry', newExpense)
       .then(res => {
         console.log(res.data);
         // Optionally update state with the response from the server
@@ -37,7 +37,7 @@ const App = () => {
     setExpenses(expenses.filter((exp) => exp.id !== id));
 
     // Send a DELETE request to remove the entry on the server
-    axios.delete(`https://expense-tracker-api-8bby.onrender.com/delete-entry/${id}`)
+    axios.delete(`https://expense-tracker-api2.onrender.com/delete-entry/${id}`)
       .then(res => {
         console.log(res.data);
         // Optionally update state with the response from the server
