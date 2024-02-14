@@ -1,6 +1,6 @@
 import { useEffect,useState } from "react";
-import ExpenseForm from "./components/ExpenseForm";
-import ExpenseItem from "./components/ExpenseItem"
+import ExpenseForm from "./Components/ExpenseForm";
+import ExpenseItem from "./Components/ExpenseItem"
 import axios from "axios";
 
 const App =()=>{
